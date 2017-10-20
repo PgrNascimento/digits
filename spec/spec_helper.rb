@@ -6,4 +6,7 @@ Dir.glob(File.join(PROJECT_ROOT, "lib", "*.rb")).each do |file|
 end
 
 RSpec.configure do |config|
+  config.color = true
+  config.formatter = :documentation
+  config.order = 'default'
 end
